@@ -32,7 +32,6 @@ const Login = ({ onLogin }) => {
     <div className="login-container">
       <h2>Login</h2>
       <div className="debug">
-        DEBUG: Login page rendered. If you see this, routing is working.
       </div>
       <form onSubmit={handleSubmit}>
         <input

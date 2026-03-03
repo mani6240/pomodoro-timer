@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { TimerProvider } from "./context/TimerContext";
 import Header from "./components/Header";
 import Home from "./pages/Home";
@@ -25,7 +25,7 @@ export default function App() {
 	const handleLogout = () => {
 		setUser(null);
 		localStorage.removeItem("loggedInUser");
-		window.location.href = "/";
+		window.location.href = `${import.meta.env.BASE_URL}#/`;
 	};
 
 	const handleRegister = () => {
@@ -61,3 +61,4 @@ export default function App() {
 		</TimerProvider>
 	);
 }
+

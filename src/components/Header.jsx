@@ -1,5 +1,6 @@
 
 import NavBar from "./NavBar";
+import { Link } from "react-router-dom";
 
 export default function Header({ user, onLogout }) {
   return (
@@ -14,7 +15,7 @@ export default function Header({ user, onLogout }) {
             <button type="button" className="header-auth-btn" onClick={onLogout}>Logout</button>
           </div>
         ) : (
-          <a href="/login" className="header-auth-btn">Login</a>
+          <Link to="/login" className="header-auth-btn">Login</Link>
         )}
       </div>
     </header>

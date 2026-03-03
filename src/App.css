@@ -347,13 +347,14 @@
 }
 /* Premium Register Page Styling */
 .register-container {
-  min-height: 100vh;
+  min-height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background: linear-gradient(135deg, #232526 0%, #414345 100%);
   font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  padding-top: 0.25rem;
 }
 
 .register-container h2 {
